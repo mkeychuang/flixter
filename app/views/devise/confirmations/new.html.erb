@@ -1,0 +1,20 @@
+<br/>
+<%= simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+  <%= f.error_notification %>
+  <%= f.full_error :confirmation_token %>
+
+  <div class="form-inputs booyah-box col-6 offset-3">
+    <%= f.input :email,
+                required: true,
+                autofocus: true,
+                value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email),
+                input_html: { autocomplete: "email" } %>
+<br/>
+  <div class="form-actions">
+    <%= f.button :submit, "Resend", class: 'btn btn-primary' %>
+  </div>
+<% end %>
+<br/>
+<%= render "devise/shared/links" %>
+<br/>
+  </div>
