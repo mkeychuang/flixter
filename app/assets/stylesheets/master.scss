@@ -71,6 +71,16 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	font-size: 18px;
 }
 
+.btn-info {
+	font-family: "Helvetica Neue", Helvetica;
+	font-size: 18px;
+}
+
+.btn-warning {
+	font-family: "Helvetica Neue", Helvetica;
+	font-size: 18px;
+}
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -96,4 +106,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .clr {
   clear: both;
+}
+
+.form-check-input {
+	margin-left: 0;
+}
+
+.badge-pill {
+	padding: 10px;
+	border-radius: 20px;
 }
