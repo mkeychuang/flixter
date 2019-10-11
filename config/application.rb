@@ -17,3 +17,6 @@ module Flixter
     # the framework and any gems in your application.
   end
 end
+
+
+# edit for git... 
