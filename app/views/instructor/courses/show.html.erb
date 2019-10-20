@@ -107,6 +107,7 @@
       </div>
 		<%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>      
       <div class="modal-body">
+	      <span>Section Title</span>
 			<%= f.input :title %>
 		</div>
       <div class="modal-footer">
@@ -131,8 +132,11 @@
       </div>
 		<%= simple_form_for @lesson, url: "#", html: {id: 'newLessonForm' } do |f| %>      
       <div class="modal-body">
+	      <span>Lesson Title</span>
 			<%= f.input :title %>
+	      <span>Lesson Video File</span>			
 			<%= f.input :video %>
+	      <span>Lesson Subtitle</span>
 			<%= f.input :subtitle %>
 	</div>
       <div class="modal-footer">
